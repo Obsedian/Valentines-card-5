@@ -1,0 +1,50 @@
+/* Floating Hearts */
+@keyframes float-heart {
+  0%   { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-200px) scale(0.5); opacity: 0; }
+}
+.heart {
+  position: absolute;
+  color: red;
+  font-size: 2em;
+  animation: float-heart 3s linear infinite;
+}
+
+/* Floating Butterflies */
+@keyframes float-butterfly {
+  0%   { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate(100px, -150px) rotate(360deg); opacity: 0; }
+}
+.butterfly {
+  position: absolute;
+  font-size: 2em;
+  animation: float-butterfly 4s linear infinite;
+}
+
+/* Floating Balloons */
+@keyframes float-balloon {
+  0%   { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-300px); opacity: 0; }
+}
+.balloon {
+  position: absolute;
+  font-size: 2em;
+  animation: float-balloon 5s linear infinite;
+}
+
+/* Floating Flowers */
+@keyframes float-flower {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+.flower {
+  position: absolute;
+  font-size: 1.5em;
+  animation: float-flower 4s linear infinite;
+}
+
+/* Common styling for all animated objects */
+.animated-object {
+  top: 0;
+  left: 0;
+}
