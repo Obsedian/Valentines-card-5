@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ente Thengaa Paale! 🤎</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Ente thengaa paale!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
-<body>
-    <div class="page-container">
-        <h1>Ente Thengaa Paale! 🤎</h1>
-        <div class="button-container">
-            <button class="yes-button" onclick="goToNextPage('page5.html')">Yes</button>
-            <button class="no-button" onclick="trickNoButton()">No</button>
-        </div>
+<body class="nickname-page page4" id="nickname-page">
+  <div class="content">
+    <h1>Ente thengaa paale!</h1>
+    <div class="button-container">
+      <button class="btn yes-btn" onclick="goToNextPage('page5.html')">Yes</button>
+      <button class="btn no-btn" id="noButton" onclick="handleNoClick()">No</button>
     </div>
-
-    <script src="script.js"></script>
+  </div>
+  
+  <!-- Music -->
+  <audio id="bg-music" src="music.mp3" loop autoplay></audio>
+  <script src="scripts.js"></script>
+  <script>
+    noClickCount = 0;
+  </script>
 </body>
 </html>
