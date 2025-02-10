@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Valentine’s Day 💖</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Happy Valentine's Day</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
-<body>
-    <div class="page-container">
-        <div class="envelope">
-            <h1>Happy Valentine’s Day, Kochuzzeee!!</h1>
-            <p>Click anywhere to continue</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+<body class="index-page">
+  <div class="envelope" id="envelope">
+    <h1>Happy Valentine’s Day, Kochuzzeee!!</h1>
+    <p>Click anywhere to continue</p>
+  </div>
+  
+  <!-- Music Integration using Relative Path -->
+  <audio id="bg-music" src="music.mp3" loop autoplay></audio>
+  
+  <script src="scripts.js"></script>
+  <script>
+    // Navigate to Page 1 on any click
+    document.addEventListener('click', function () {
+      window.location.href = 'page1.html';
+    });
+  </script>
 </body>
 </html>
