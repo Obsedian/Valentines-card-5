@@ -5,6 +5,7 @@
   <title>Happy Valentine's Day</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="animations.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="index-page">
   <div class="envelope" id="envelope">
@@ -12,33 +13,15 @@
     <p>Click anywhere to continue</p>
   </div>
   
-  <!-- Music Integration using Relative Path -->
-
-
-  
-  <!-- Audio Element -->
-    <audio id="background-music" src="music.mp3" loop></audio>
-
-    <!-- Play Button -->
-    <button id="play-button">Play Music</button>
-
-    <script>
-        document.getElementById('play-button').addEventListener('click', function() {
-            var audio = document.getElementById('background-music');
-            audio.play();
-            this.style.display = 'none'; // Hide the play button after clicking
-        });
-    </script>
-</body>
-
-  
-  
-  <audio id="bg-music" src="music.mp3" loop autoplay></audio>
+  <!-- Music Integration -->
+  <audio id="bg-music" src="music.mp3" loop></audio>
   
   <script src="scripts.js"></script>
   <script>
-    // Navigate to Page 1 on any click
+    // Play music and navigate to Page 1 on any click
     document.addEventListener('click', function () {
+      var audio = document.getElementById('bg-music');
+      audio.play();
       window.location.href = 'page1.html';
     });
   </script>
