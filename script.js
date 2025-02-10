@@ -5,6 +5,7 @@ function goToNextPage(page) {
     window.location.href = page;  // Navigate to the next page
 }
 
+
 function trickNoButton() {
     let noButton = document.querySelector('.no-button');
     if (yesButtonCount < 7) {
